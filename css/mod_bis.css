@@ -1,0 +1,14 @@
+#mod_bis_tabs ul.tabs {
+    margin: 0;
+    padding: 0;
+}
+
+#mod_bis_tabs li.tab {
+    display: inline;
+    list-style: none;
+    cursor: pointer;
+}
+
+#mod_bis_tabs div.content {
+  clear: left;
+}
