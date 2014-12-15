@@ -3,7 +3,7 @@
 defined('_JEXEC') or die;
 
 //We need content plugin BIS to be installed !!!
-require_once (JPATH_BASE . DS . 'plugins' . DS . 'content' . DS . 'bis' . DS . 'myr' . DS . 'myr.php');
+require_once (JPATH_BASE . DIRECTORY_SEPARATOR . 'plugins' . DIRECTORY_SEPARATOR . 'content' . DIRECTORY_SEPARATOR . 'bis' . DIRECTORY_SEPARATOR . 'myr' . DIRECTORY_SEPARATOR . 'myr.php');
 
 jimport('joomla.html.parameter');
 
@@ -11,7 +11,7 @@ abstract class Mod_BisHelper {
 
   //Build query for myr based on module params
   public function buildQuery($params) {
-    //Get parameters
+    //Get parameters      
     $show_type = $params->get('show-type');
     $custom_query = $params->get('custom-query');
     $limit_count = $params->get('limit-count');

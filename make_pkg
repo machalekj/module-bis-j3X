@@ -5,5 +5,5 @@ find . -name '*.xml' -exec dos2unix {} \;
 
 version=$(grep '<version>' mod_bis.xml | sed -e 's/<[a-z\/]*>//g' | sed -e 's/ *//g')
 rm dist/module_bis*.zip
-zip -r module_bis-${version}-j25.zip tmpl js css helper.php cs-CZ.* en-GB.*  mod_bis.php mod_bis.xml index.html
+zip -r module_bis-${version}-j3X.zip tmpl js css helper.php cs-CZ.* en-GB.*  mod_bis.php mod_bis.xml index.html
 mv module_bis-${version}*.zip dist/
